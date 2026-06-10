@@ -31,7 +31,7 @@ function App() {
               <a href="#work" className="rounded-full bg-pink-500 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-pink-400">
                 View projects
               </a>
-              <a href="#contact" className="rounded-full border border-slate-700 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:border-slate-500">
+              <a href="https://t.me/aye7130" target="_blank" rel="noopener noreferrer" className="rounded-full border border-slate-700 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:border-slate-500">
                 Contact me
               </a>
             </div>
@@ -104,8 +104,8 @@ function App() {
         <section id="contact" className="mt-16 rounded-[2rem] border border-slate-300/80 bg-white/80 p-8 shadow-soft backdrop-blur-lg">
           <h2 className="text-3xl font-semibold text-slate-950">Let's build something together</h2>
           <p className="mt-4 max-w-2xl text-slate-700">If you have a front-end project or need help bringing a design to life, I’m happy to collaborate. Reach out and let’s create a polished web experience.</p>
-          <a href="mailto:hello@example.com" className="mt-8 inline-flex rounded-full bg-pink-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-pink-400">
-            hello@example.com
+          <a href="mailto:ayethiria2@gmail.com" className="mt-8 inline-flex rounded-full bg-pink-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-pink-400">
+            ayethiria2@gmail.com
           </a>
         </section>
       </main>
