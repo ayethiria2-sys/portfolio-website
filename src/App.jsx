@@ -78,15 +78,69 @@ function App() {
           </div>
           <div className="grid gap-6 lg:grid-cols-2">
             <article className="rounded-[2rem] border border-slate-300/80 bg-white/80 p-8 shadow-soft backdrop-blur-lg transition hover:-translate-y-1 hover:border-pink-500/40">
-              <span className="text-xs uppercase tracking-[0.35em] text-slate-700">Product site</span>
+              <img
+                src="https://images.unsplash.com/photo-1505685296765-3a2736de412f?auto=format&fit=crop&w=1200&q=80"
+                alt="Landing page project screenshot"
+                className="h-44 w-full rounded-[1.75rem] object-cover"
+              />
+              <span className="mt-6 text-xs uppercase tracking-[0.35em] text-slate-700">Product site</span>
               <h3 className="mt-4 text-2xl font-semibold text-slate-950">Landing page for SaaS</h3>
               <p className="mt-3 text-slate-700">Developed a responsive product landing page with animated sections and feature-rich content blocks.</p>
+              <div className="mt-6 flex items-center justify-between gap-4">
+                <span className="text-xs font-semibold uppercase tracking-[0.35em] text-pink-300">SaaS UI</span>
+                <a href="#project-details" className="rounded-full bg-pink-500 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-pink-400">
+                  View project
+                </a>
+              </div>
             </article>
             <article className="rounded-[2rem] border border-slate-300/80 bg-white/80 p-8 shadow-soft backdrop-blur-lg transition hover:-translate-y-1 hover:border-pink-500/40">
-              <span className="text-xs uppercase tracking-[0.35em] text-slate-700">Design system</span>
+              <img
+                src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80"
+                alt="Component library project screenshot"
+                className="h-44 w-full rounded-[1.75rem] object-cover"
+              />
+              <span className="mt-6 text-xs uppercase tracking-[0.35em] text-slate-700">Design system</span>
               <h3 className="mt-4 text-2xl font-semibold text-slate-950">Component library</h3>
               <p className="mt-3 text-slate-700">Built a reusable UI library for cards, modals, forms, and navigation using Tailwind utility classes.</p>
+              <div className="mt-6 flex items-center justify-between gap-4">
+                <span className="text-xs font-semibold uppercase tracking-[0.35em] text-pink-300">UI Library</span>
+                <a href="#project-details" className="rounded-full bg-pink-500 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-pink-400">
+                  View project
+                </a>
+              </div>
             </article>
+          </div>
+        </section>
+
+        <section id="project-details" className="space-y-8 py-16">
+          <div className="rounded-[2rem] border border-slate-300/80 bg-white/80 p-8 shadow-soft backdrop-blur-lg">
+            <h2 className="text-3xl font-semibold text-slate-950">Landing page for SaaS</h2>
+            <p className="mt-3 text-slate-700">A polished marketing site built for conversion, featuring responsive sections, modern typography, and clear CTA patterns.</p>
+            <div className="mt-8 grid gap-6 lg:grid-cols-2">
+              <div className="rounded-[2rem] border border-slate-200 bg-slate-100/90 p-6">
+                <h3 className="text-xl font-semibold text-slate-950">Featured work</h3>
+                <p className="mt-3 text-slate-700">Designed interactive hero layouts, pricing cards, feature grids, and testimonial sections to support product storytelling.</p>
+              </div>
+              <div className="rounded-[2rem] border border-slate-200 bg-slate-100/90 p-6">
+                <h3 className="text-xl font-semibold text-slate-950">Tech stack</h3>
+                <p className="mt-3 text-slate-700">React + Tailwind CSS, responsive mobile-first design, accessible components, and lightweight animations.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="rounded-[2rem] border border-slate-300/80 bg-white/80 p-8 shadow-soft backdrop-blur-lg">
+            <h2 className="text-3xl font-semibold text-slate-950">Component library</h2>
+            <p className="mt-3 text-slate-700">A reusable design system built for consistency, accessibility, and easy scaling across product interfaces.</p>
+            <div className="mt-8 grid gap-6 lg:grid-cols-2">
+              <div className="rounded-[2rem] border border-slate-200 bg-slate-100/90 p-6">
+                <h3 className="text-xl font-semibold text-slate-950">What’s included</h3>
+                <p className="mt-3 text-slate-700">A set of modular cards, buttons, forms, and layout patterns that can be reused in dashboards and landing pages.</p>
+              </div>
+              <div className="rounded-[2rem] border border-slate-200 bg-slate-100/90 p-6">
+                <h3 className="text-xl font-semibold text-slate-950">Benefits</h3>
+                <p className="mt-3 text-slate-700">Improved development speed, consistent UI behavior, and a scalable foundation for new product features.</p>
+              </div>
+            </div>
           </div>
         </section>
 
