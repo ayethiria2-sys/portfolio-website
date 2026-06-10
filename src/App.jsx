@@ -38,7 +38,11 @@ function App() {
           </div>
           <div className="rounded-[2rem] border border-slate-300/70 bg-white/80 p-8 shadow-soft backdrop-blur-lg">
             <div className="space-y-4">
-              <div className="h-56 rounded-[1.5rem] bg-slate-800" />
+              <img
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1400&q=80"
+                alt="Creative dashboard preview"
+                className="h-56 w-full rounded-[1.5rem] object-cover"
+              />
               <div className="space-y-2">
                 <p className="text-sm uppercase tracking-[0.3em] text-slate-700">Featured</p>
                 <h2 className="text-2xl font-semibold text-slate-950">Creative dashboard UI</h2>
