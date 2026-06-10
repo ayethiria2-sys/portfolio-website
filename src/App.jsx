@@ -1,14 +1,17 @@
 function App() {
   return (
-    <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(255,182,193,0.35),_transparent_35%),_linear-gradient(180deg,_rgb(255_228_241)_0%,_rgb(255_240_245)_100%)] text-slate-950">
-      <header className="mx-auto max-w-6xl px-6 py-8 sm:px-8">
-        <nav className="flex items-center justify-between text-sm text-slate-950">
-          <span className="font-semibold text-pink-300">Portfolio</span>
+    <div className="relative min-h-screen overflow-hidden bg-[radial-gradient(circle_at_top,_rgba(255,182,193,0.35),_transparent_35%),_linear-gradient(180deg,_rgb(255_228_241)_0%,_rgb(255_240_245)_100%)] text-slate-950">
+      <div className="pointer-events-none absolute left-1/2 top-0 h-72 w-72 -translate-x-1/2 rounded-full bg-pink-300/20 blur-3xl" />
+      <div className="pointer-events-none absolute right-0 top-24 h-72 w-72 rounded-full bg-cyan-200/20 blur-3xl" />
+      <div className="pointer-events-none absolute left-0 bottom-0 h-72 w-72 rounded-full bg-violet-200/20 blur-3xl" />
+      <header className="relative mx-auto max-w-6xl px-6 py-8 sm:px-8">
+        <nav className="flex items-center justify-between text-sm text-slate-700">
+          <span className="font-semibold tracking-[0.3em] text-pink-500">Portfolio</span>
           <div className="flex gap-6">
-            <a href="#about" className="hover:text-slate-950">About</a>
-            <a href="#work" className="hover:text-slate-950">Work</a>
-            <a href="#skills" className="hover:text-slate-950">Skills</a>
-            <a href="#contact" className="hover:text-slate-950">Contact</a>
+            <a href="#about" className="transition-colors hover:text-slate-950">About</a>
+            <a href="#work" className="transition-colors hover:text-slate-950">Work</a>
+            <a href="#skills" className="transition-colors hover:text-slate-950">Skills</a>
+            <a href="#contact" className="transition-colors hover:text-slate-950">Contact</a>
           </div>
         </nav>
       </header>
@@ -16,7 +19,7 @@ function App() {
       <main className="mx-auto max-w-6xl px-6 pb-20 sm:px-8">
         <section className="grid gap-12 py-16 lg:grid-cols-[1.3fr_0.7fr] lg:items-center">
           <div className="space-y-8">
-            <div className="inline-flex rounded-full bg-pink-500/10 px-4 py-1 text-xs uppercase tracking-[0.35em] text-pink-300">
+            <div className="inline-flex rounded-full bg-pink-500/15 px-4 py-1 text-xs uppercase tracking-[0.35em] text-pink-500 ring-1 ring-pink-500/20">
               Front-end developer
             </div>
             <div className="space-y-6">
@@ -27,16 +30,16 @@ function App() {
                 I turn design systems into responsive web apps. My focus is clean UI, intuitive UX, and modern front-end code that scales.
               </p>
             </div>
-            <div className="flex gap-4 flex-wrap">
-              <a href="#work" className="rounded-full bg-pink-500 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-pink-400">
+            <div className="flex flex-wrap gap-4">
+              <a href="#work" className="rounded-full bg-gradient-to-r from-pink-500 via-fuchsia-500 to-violet-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-pink-500/20 transition hover:opacity-95">
                 View projects
               </a>
-              <a href="https://t.me/aye7130" target="_blank" rel="noopener noreferrer" className="rounded-full border border-slate-700 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:border-slate-500">
+              <a href="https://t.me/aye7130" target="_blank" rel="noopener noreferrer" className="rounded-full border border-slate-300 bg-white/90 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:border-slate-500">
                 Contact me
               </a>
             </div>
           </div>
-          <div className="rounded-[2rem] border border-slate-300/70 bg-white/80 p-8 shadow-soft backdrop-blur-lg">
+          <div className="rounded-[2rem] border border-slate-200/80 bg-white/90 p-8 shadow-[0_35px_80px_-45px_rgba(15,23,42,0.45)] backdrop-blur-2xl">
             <div className="space-y-4">
               <img
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1400&q=80"
@@ -44,7 +47,7 @@ function App() {
                 className="h-56 w-full rounded-[1.5rem] object-cover"
               />
               <div className="space-y-2">
-                <p className="text-sm uppercase tracking-[0.3em] text-slate-700">Featured</p>
+                <p className="text-sm uppercase tracking-[0.3em] text-slate-500">Featured</p>
                 <h2 className="text-2xl font-semibold text-slate-950">Creative dashboard UI</h2>
                 <p className="text-slate-700">A React dashboard built with reusable components, responsive layouts, and accessible interactions.</p>
               </div>
@@ -77,34 +80,34 @@ function App() {
             </div>
           </div>
           <div className="grid gap-6 lg:grid-cols-2">
-            <article className="rounded-[2rem] border border-slate-300/80 bg-white/80 p-8 shadow-soft backdrop-blur-lg transition hover:-translate-y-1 hover:border-pink-500/40">
+            <article className="group rounded-[2rem] border border-slate-200/90 bg-white/90 p-8 shadow-[0_25px_60px_-30px_rgba(15,23,42,0.25)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_35px_80px_-35px_rgba(236,72,153,0.25)] hover:border-pink-300/40">
               <img
                 src="https://images.unsplash.com/photo-1505685296765-3a2736de412f?auto=format&fit=crop&w=1200&q=80"
                 alt="Landing page project screenshot"
                 className="h-44 w-full rounded-[1.75rem] object-cover"
               />
-              <span className="mt-6 text-xs uppercase tracking-[0.35em] text-slate-700">Product site</span>
+              <span className="mt-6 inline-flex rounded-full bg-pink-50 px-3 py-1 text-xs uppercase tracking-[0.35em] text-pink-500 shadow-sm">Product site</span>
               <h3 className="mt-4 text-2xl font-semibold text-slate-950">Landing page for SaaS</h3>
               <p className="mt-3 text-slate-700">Developed a responsive product landing page with animated sections and feature-rich content blocks.</p>
               <div className="mt-6 flex items-center justify-between gap-4">
-                <span className="text-xs font-semibold uppercase tracking-[0.35em] text-pink-300">SaaS UI</span>
-                <a href="#project-details" className="rounded-full bg-pink-500 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-pink-400">
+                <span className="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">SaaS UI</span>
+                <a href="#project-details" className="rounded-full bg-gradient-to-r from-pink-500 via-fuchsia-500 to-violet-500 px-4 py-2 text-sm font-semibold text-white transition hover:opacity-90">
                   View project
                 </a>
               </div>
             </article>
-            <article className="rounded-[2rem] border border-slate-300/80 bg-white/80 p-8 shadow-soft backdrop-blur-lg transition hover:-translate-y-1 hover:border-pink-500/40">
+            <article className="group rounded-[2rem] border border-slate-200/90 bg-white/90 p-8 shadow-[0_25px_60px_-30px_rgba(15,23,42,0.25)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_35px_80px_-35px_rgba(236,72,153,0.25)] hover:border-pink-300/40">
               <img
                 src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80"
                 alt="Component library project screenshot"
                 className="h-44 w-full rounded-[1.75rem] object-cover"
               />
-              <span className="mt-6 text-xs uppercase tracking-[0.35em] text-slate-700">Design system</span>
+              <span className="mt-6 inline-flex rounded-full bg-pink-50 px-3 py-1 text-xs uppercase tracking-[0.35em] text-pink-500 shadow-sm">Design system</span>
               <h3 className="mt-4 text-2xl font-semibold text-slate-950">Component library</h3>
               <p className="mt-3 text-slate-700">Built a reusable UI library for cards, modals, forms, and navigation using Tailwind utility classes.</p>
               <div className="mt-6 flex items-center justify-between gap-4">
-                <span className="text-xs font-semibold uppercase tracking-[0.35em] text-pink-300">UI Library</span>
-                <a href="#project-details" className="rounded-full bg-pink-500 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-pink-400">
+                <span className="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">UI Library</span>
+                <a href="#project-details" className="rounded-full bg-gradient-to-r from-pink-500 via-fuchsia-500 to-violet-500 px-4 py-2 text-sm font-semibold text-white transition hover:opacity-90">
                   View project
                 </a>
               </div>
