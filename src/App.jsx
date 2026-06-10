@@ -1,9 +1,9 @@
 function App() {
   return (
-    <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.12),_transparent_35%),_linear-gradient(180deg,_rgb(15_23_42)_0%,_rgb(15_23_42)_100%)] text-slate-100">
+    <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(236,72,153,0.12),_transparent_35%),_linear-gradient(180deg,_rgb(15_23_42)_0%,_rgb(15_23_42)_100%)] text-slate-100">
       <header className="mx-auto max-w-6xl px-6 py-8 sm:px-8">
         <nav className="flex items-center justify-between text-sm text-slate-300">
-          <span className="font-semibold text-cyan-300">Portfolio</span>
+          <span className="font-semibold text-pink-300">Portfolio</span>
           <div className="flex gap-6">
             <a href="#about" className="hover:text-white">About</a>
             <a href="#work" className="hover:text-white">Work</a>
@@ -16,7 +16,7 @@ function App() {
       <main className="mx-auto max-w-6xl px-6 pb-20 sm:px-8">
         <section className="grid gap-12 py-16 lg:grid-cols-[1.3fr_0.7fr] lg:items-center">
           <div className="space-y-8">
-            <div className="inline-flex rounded-full bg-cyan-500/10 px-4 py-1 text-xs uppercase tracking-[0.35em] text-cyan-300">
+            <div className="inline-flex rounded-full bg-pink-500/10 px-4 py-1 text-xs uppercase tracking-[0.35em] text-pink-300">
               Front-end developer
             </div>
             <div className="space-y-6">
@@ -28,7 +28,7 @@ function App() {
               </p>
             </div>
             <div className="flex gap-4 flex-wrap">
-              <a href="#work" className="rounded-full bg-cyan-500 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-400">
+              <a href="#work" className="rounded-full bg-pink-500 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-pink-400">
                 View projects
               </a>
               <a href="#contact" className="rounded-full border border-slate-700 px-5 py-3 text-sm font-semibold text-slate-200 transition hover:border-slate-500">
@@ -68,17 +68,17 @@ function App() {
         <section id="work" className="space-y-8 py-16">
           <div className="flex items-center justify-between gap-4">
             <div>
-              <p className="text-sm uppercase tracking-[0.35em] text-cyan-300">Projects</p>
+              <p className="text-sm uppercase tracking-[0.35em] text-pink-300">Projects</p>
               <h2 className="mt-3 text-3xl font-semibold text-white">Selected work</h2>
             </div>
           </div>
           <div className="grid gap-6 lg:grid-cols-2">
-            <article className="rounded-[2rem] border border-slate-800/80 bg-slate-900/70 p-8 shadow-soft backdrop-blur-lg transition hover:-translate-y-1 hover:border-cyan-500/40">
+            <article className="rounded-[2rem] border border-slate-800/80 bg-slate-900/70 p-8 shadow-soft backdrop-blur-lg transition hover:-translate-y-1 hover:border-pink-500/40">
               <span className="text-xs uppercase tracking-[0.35em] text-slate-500">Product site</span>
               <h3 className="mt-4 text-2xl font-semibold text-white">Landing page for SaaS</h3>
               <p className="mt-3 text-slate-300">Developed a responsive product landing page with animated sections and feature-rich content blocks.</p>
             </article>
-            <article className="rounded-[2rem] border border-slate-800/80 bg-slate-900/70 p-8 shadow-soft backdrop-blur-lg transition hover:-translate-y-1 hover:border-cyan-500/40">
+            <article className="rounded-[2rem] border border-slate-800/80 bg-slate-900/70 p-8 shadow-soft backdrop-blur-lg transition hover:-translate-y-1 hover:border-pink-500/40">
               <span className="text-xs uppercase tracking-[0.35em] text-slate-500">Design system</span>
               <h3 className="mt-4 text-2xl font-semibold text-white">Component library</h3>
               <p className="mt-3 text-slate-300">Built a reusable UI library for cards, modals, forms, and navigation using Tailwind utility classes.</p>
@@ -100,7 +100,7 @@ function App() {
         <section id="contact" className="mt-16 rounded-[2rem] border border-slate-800/80 bg-slate-900/70 p-8 shadow-soft backdrop-blur-lg">
           <h2 className="text-3xl font-semibold text-white">Let's build something together</h2>
           <p className="mt-4 max-w-2xl text-slate-300">If you have a front-end project or need help bringing a design to life, I’m happy to collaborate. Reach out and let’s create a polished web experience.</p>
-          <a href="mailto:hello@example.com" className="mt-8 inline-flex rounded-full bg-cyan-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-400">
+          <a href="mailto:hello@example.com" className="mt-8 inline-flex rounded-full bg-pink-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-pink-400">
             hello@example.com
           </a>
         </section>
