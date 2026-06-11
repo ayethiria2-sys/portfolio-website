@@ -5,7 +5,7 @@ function App() {
       <div className="pointer-events-none absolute right-0 top-24 h-72 w-72 rounded-full bg-cyan-200/20 blur-3xl" />
       <div className="pointer-events-none absolute left-0 bottom-0 h-72 w-72 rounded-full bg-violet-200/20 blur-3xl" />
       <header className="relative mx-auto max-w-6xl px-6 py-8 sm:px-8">
-        <nav className="flex items-center justify-between text-sm text-slate-700">
+        <nav className="flex items-center justify-between rounded-full border border-slate-200/70 bg-white/90 px-6 py-4 text-sm text-slate-700 shadow-sm backdrop-blur-xl">
           <span className="font-semibold tracking-[0.3em] text-pink-500">Portfolio</span>
           <div className="flex gap-6">
             <a href="#about" className="transition-colors hover:text-slate-950">About</a>
@@ -16,24 +16,24 @@ function App() {
         </nav>
       </header>
 
-      <main className="mx-auto max-w-6xl px-6 pb-20 sm:px-8">
-        <section className="grid gap-12 py-16 lg:grid-cols-[1.3fr_0.7fr] lg:items-center">
-          <div className="space-y-8">
+      <main className="mx-auto max-w-6xl px-6 pb-24 sm:px-8">
+        <section className="space-y-8 py-16">
+          <div className="space-y-6">
             <div className="inline-flex rounded-full bg-pink-500/15 px-4 py-1 text-xs uppercase tracking-[0.35em] text-pink-500 ring-1 ring-pink-500/20">
               Front-end developer
             </div>
-            <div className="space-y-6">
-              <h1 className="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
+            <div className="max-w-4xl space-y-4">
+              <h1 className="text-5xl font-semibold tracking-tight text-slate-950 sm:text-6xl">
                 <span className="typing inline-block">
                   I build polished interfaces with React and Tailwind.
                 </span>
               </h1>
-              <p className="max-w-2xl text-slate-700 sm:text-lg">
+              <p className="text-lg text-slate-700 leading-8 max-w-2xl">
                 I turn design systems into responsive web apps. My focus is clean UI, intuitive UX, and modern front-end code that scales.
               </p>
             </div>
-            <div className="flex flex-wrap gap-4">
-              <a href="#work" className="rounded-full bg-gradient-to-r from-pink-500 via-fuchsia-500 to-violet-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-pink-500/20 transition hover:opacity-95">
+            <div className="flex flex-wrap gap-4 pt-4">
+              <a href="#work" className="rounded-full bg-gradient-to-r from-pink-500 via-fuchsia-500 to-violet-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-pink-500/20 transition hover:-translate-y-0.5 hover:opacity-95">
                 View projects
               </a>
               <a href="https://t.me/aye7130" target="_blank" rel="noopener noreferrer" className="rounded-full border border-slate-300 bg-white/90 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:border-slate-500">
@@ -41,36 +41,64 @@ function App() {
               </a>
             </div>
           </div>
-          <div className="rounded-[2rem] border border-slate-200/80 bg-white/90 p-8 shadow-[0_35px_80px_-45px_rgba(15,23,42,0.45)] backdrop-blur-2xl">
-            <div className="space-y-4">
-              <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1400&q=80"
-                alt="Creative dashboard preview"
-                className="h-56 w-full rounded-[1.5rem] object-cover"
-              />
-              <div className="space-y-2">
-                <p className="text-sm uppercase tracking-[0.3em] text-slate-500">Featured</p>
-                <h2 className="text-2xl font-semibold text-slate-950">Creative dashboard UI</h2>
-                <p className="text-slate-700">A React dashboard built with reusable components, responsive layouts, and accessible interactions.</p>
-              </div>
+
+          <div className="grid gap-6 sm:grid-cols-3 pt-8">
+            <div className="rounded-[1.75rem] border border-slate-200/80 bg-white/90 p-6 shadow-soft backdrop-blur-sm">
+              <p className="text-xs uppercase tracking-[0.35em] text-pink-500">Expertise</p>
+              <p className="mt-4 text-xl font-semibold text-slate-950">React + Tailwind</p>
+              <p className="mt-2 text-slate-700 text-sm">Modern component libraries and responsive layouts.</p>
+            </div>
+            <div className="rounded-[1.75rem] border border-slate-200/80 bg-white/90 p-6 shadow-soft backdrop-blur-sm">
+              <p className="text-xs uppercase tracking-[0.35em] text-pink-500">Focus</p>
+              <p className="mt-4 text-xl font-semibold text-slate-950">Accessibility First</p>
+              <p className="mt-2 text-slate-700 text-sm">Clean, inclusive code that works for everyone.</p>
+            </div>
+            <div className="rounded-[1.75rem] border border-slate-200/80 bg-white/90 p-6 shadow-soft backdrop-blur-sm">
+              <p className="text-xs uppercase tracking-[0.35em] text-pink-500">Approach</p>
+              <p className="mt-4 text-xl font-semibold text-slate-950">Design-Driven</p>
+              <p className="mt-2 text-slate-700 text-sm">Translating design into polished user experience.</p>
             </div>
           </div>
         </section>
 
-        <section id="about" className="space-y-6 rounded-[2rem] border border-slate-300/80 bg-white/80 p-8 shadow-soft backdrop-blur-lg">
-          <h2 className="text-3xl font-semibold text-slate-950">About me</h2>
-          <p className="max-w-3xl text-slate-700 leading-8">
-            I’m a front-end developer who crafts responsive web experiences with React, Tailwind CSS, and modern build tools. I enjoy translating polished UI designs into clean, accessible code that feels fast and intuitive on both desktop and mobile.
-          </p>
-          <div className="grid gap-6 sm:grid-cols-2">
-            <div className="rounded-3xl bg-slate-100/80 p-6">
-              <p className="text-lg font-semibold text-slate-950">Experience</p>
-              <p className="mt-2 text-slate-700">Component libraries, single-page apps, interactive design systems, and performance-minded front-end architecture.</p>
+        <section id="about" className="grid gap-10 rounded-[2rem] border border-slate-300/80 bg-white/80 p-10 shadow-soft backdrop-blur-lg lg:grid-cols-2">
+          <div className="space-y-6">
+            <h2 className="text-3xl font-semibold text-slate-950">About my work</h2>
+            <p className="text-slate-700 leading-8">
+              I'm a front-end developer who crafts responsive web experiences with React, Tailwind CSS, and modern build tools. I enjoy translating polished UI designs into clean, accessible code that feels fast and intuitive on both desktop and mobile.
+            </p>
+            <div className="space-y-4 pt-4">
+              <div className="flex gap-4">
+                <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-pink-500 to-fuchsia-500 flex items-center justify-center text-white font-semibold text-lg">1</div>
+                <div>
+                  <p className="font-semibold text-slate-950">Component-driven development</p>
+                  <p className="text-sm text-slate-700">Building reusable UI elements for scalability.</p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-pink-500 to-fuchsia-500 flex items-center justify-center text-white font-semibold text-lg">2</div>
+                <div>
+                  <p className="font-semibold text-slate-950">Mobile-first design</p>
+                  <p className="text-sm text-slate-700">Responsive layouts optimized for every screen.</p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-pink-500 to-fuchsia-500 flex items-center justify-center text-white font-semibold text-lg">3</div>
+                <div>
+                  <p className="font-semibold text-slate-950">Accessible patterns</p>
+                  <p className="text-sm text-slate-700">Inclusive code that works for all users.</p>
+                </div>
+              </div>
             </div>
-            <div className="rounded-3xl bg-slate-100/80 p-6">
-              <p className="text-lg font-semibold text-slate-950">Approach</p>
-              <p className="mt-2 text-slate-700">Clean code, strong collaboration with designers, accessible patterns, and a mobile-first mindset.</p>
-            </div>
+          </div>
+          <div className="rounded-[1.75rem] border border-slate-200/80 bg-gradient-to-br from-pink-50 to-fuchsia-50 p-8 shadow-soft">
+            <img
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1400&q=80"
+              alt="Creative dashboard preview"
+              className="h-64 w-full rounded-[1.25rem] object-cover mb-6"
+            />
+            <h3 className="text-2xl font-semibold text-slate-950">Featured: Creative dashboard UI</h3>
+            <p className="mt-3 text-slate-700">A React dashboard built with reusable components, responsive layouts, and accessible interactions.</p>
           </div>
         </section>
 
