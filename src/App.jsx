@@ -24,7 +24,9 @@ function App() {
             </div>
             <div className="space-y-6">
               <h1 className="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
-                I build polished interfaces with React and Tailwind.
+                <span className="typing inline-block">
+                  I build polished interfaces with React and Tailwind.
+                </span>
               </h1>
               <p className="max-w-2xl text-slate-700 sm:text-lg">
                 I turn design systems into responsive web apps. My focus is clean UI, intuitive UX, and modern front-end code that scales.
